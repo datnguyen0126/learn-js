@@ -1,0 +1,22 @@
+/[enl]/g   characters e,n,l
+/[^enl]/g  not characters e,n,l
+/[a-z]/g  /[A-Z]/g  /[0-9]/g
+/./g  select all except new line
+/\n/g  select new line
+/\w/g  select word character
+/\W/g  select not word character
+/\d/g  select digit
+/\D/g  select not digit
+/\s/g  select space
+/\S/g  select not space
+/[\s\S]/g  select all
+/^I/g  select start I
+/^I/gm  select start I multiline
+/d$/gm  select end d multiline
+/\./gm  select dot
+/(old)/gm  select the word "old"
+/g(?=old)/gm  select "g" before "old"
+/g(?!old)/gm  select "g" not before "old"
+/\d{3,4}/gm  select 3 or 4 continuous digit
+/(^\d{5})-/gm  select "10001-"
+/\s{2,}/gm  select 2 or more continuous space
